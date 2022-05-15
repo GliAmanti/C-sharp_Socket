@@ -1,0 +1,21 @@
+﻿<Window x:Class="serverHW.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:serverHW"
+        mc:Ignorable="d"
+        Title="Server" Height="617" Width="800">
+    <Grid>
+        <Label Content="Socket Address: " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="43" Width="180" FontSize="22"/>
+        <Label Content="Port: " HorizontalAlignment="Left" Margin="360,10,0,0" VerticalAlignment="Top" Height="43" Width="61" FontSize="22"/>
+        <TextBox x:Name="ipContent" HorizontalAlignment="Left" Height="38" Margin="195,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" FontSize="24" Text="127.0.0.1"/>
+        <TextBox x:Name="portContent" HorizontalAlignment="Left" Height="38" Margin="421,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" FontSize="24" Text="20001"/>
+        <TextBox x:Name="messageAll" HorizontalAlignment="Left" Height="335" Margin="10,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="773"/>
+        <Button x:Name="startBtn" Content="Start Listen" HorizontalAlignment="Left" Margin="609,15,0,0" VerticalAlignment="Top" Width="159" FontSize="24" Height="48" Click="start_Click"/>
+        <Button x:Name="stopBtn" Content="Stop Listen" HorizontalAlignment="Left" Margin="609,68,0,0" VerticalAlignment="Top" Width="159" FontSize="24" Height="48" Click="stopBtn_Click"/>
+        <Label Content="Message: " HorizontalAlignment="Left" Margin="10,139,0,0" VerticalAlignment="Top" Height="43" Width="107" FontSize="22"/>
+        <TextBox x:Name="messageContent" HorizontalAlignment="Left" Height="38" Margin="122,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="453" FontSize="24"/>
+        <Button x:Name="sendBtn" Content="Send" HorizontalAlignment="Left" Margin="629,129,0,0" VerticalAlignment="Top" Width="123" FontSize="24" Height="48" Click="sendBtn_Click"/>
+    </Grid>
+</Window>
